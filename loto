@@ -1,0 +1,14 @@
+//  prindib välja võitja nime (random)
+	
+<?php
+// Create an array and push on the names of your closest family and friends
+    $family = array();
+    	array_push($family, "Kalle");
+    	array_push($family, "Malle");
+    	array_push($family, "Silja");
+    	array_push($family, "Heino");
+// Randomly select a winner!
+	$winner = rand(0, count($family) - 1);
+// Print the winner's name in ALL CAPS
+	print strtoupper($family[$winner]);
+	?>
